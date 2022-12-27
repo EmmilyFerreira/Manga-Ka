@@ -1,0 +1,282 @@
+:root{
+    --roxo: #bc4cd8 ;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: white;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--preta);       
+}
+
+.popup-container {
+    display: none;
+    color: var(--preta);
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.popup {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    height: 60%;
+    margin: 4% auto;
+    padding: 20px;
+    position: relative;
+    background-color: var(--preta);
+}
+
+.titulo-popup {
+    color: var(--roxo);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50%;
+    margin-left: 18%;
+    margin-top: 20px;
+}
+
+.imagem {
+    background: url(/img/20.jpg);
+    background-size: contain;
+    margin-left: 35%;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+form div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+form input {
+    border-radius: 15px;
+    width: 200px;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    height: 30px;
+    font-size: 12px;
+}
+
+form button {
+    width: 30%;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    background: var(--roxo);
+    color:white;
+    cursor: pointer;
+}
+
+.botoes-form {
+    font-size: 14px;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+
+.botoes-form a {
+    text-decoration: none;
+    color: white;
+}
+
+header .container{
+    margin-top: 5px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--roxo);
+    font-family:'Courier New', Courier, monospace;
+    font-size:40px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+
+.perfil {
+    margin-right: 15px;
+}
+
+.perfil button {
+    color: var(--preta);
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+.perfil i {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.perfil i:hover {
+    color: var(--roxo);
+}
+
+.pesquisar {
+    background-color: white;
+    border-radius: 15px;
+    width: 200px;
+    margin-right: 15px;
+}
+
+.pesquisartxt {
+    color: black;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 5px;
+    height: 32px;
+}
+
+.pesquisar a {
+    color: var(--preta);
+}
+
+
+/*filme principal*/
+.manga-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/77.png');
+    height:460px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.manga-principal .descricao{
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.manga-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-manga{
+    height: 450px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-mangas{
+    margin-top:20px;
+}
+
+.carrosel-mangas h2 {
+    padding: 10px;color: var(--roxo);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    margin-top: 20px;
+    color: gray;
+}
+
+footer p {
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
